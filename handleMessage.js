@@ -2,7 +2,9 @@ import handleCommand from './handleCommand.js';
 
 async function handleMessage(client) {
    client.on('messageCreate', async message => {
-      if(getFirstCharacter(message.content) !== '&') return;
+      if(getFirstCharacter(message.content) !== '&' || message.author.bot) {
+         return;
+      }
 
       const command = getCommand(message.content);
       const response = handleCommand(command);
@@ -11,7 +13,7 @@ async function handleMessage(client) {
          return;
       }
 
-      await message.reply(`@${message.author.globalName} ${response}`);
+      await message.reply(`<@${message.author.id}>, ${response}`);
    });
 }
 

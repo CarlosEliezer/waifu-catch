@@ -12,7 +12,7 @@ async function handleCommandSlash(client) {
          return;
       }
 
-      await interaction.reply(`@${interaction.user.globalName} ${response}`);
+      await interaction.reply(`<@${interaction.user.id}> ${response}`);
    });
 }
 
