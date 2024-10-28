@@ -20,7 +20,7 @@
     "game",
     "catch"
   ],
-  "author": "Carlos Eliezer, Hugo Ruan & Roberty Brum",
+  "author": "Carlos Eliezer, Denner Amaral, Hugo Ruan & Roberty Brum",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.16.3",
