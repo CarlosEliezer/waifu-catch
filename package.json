@@ -1,0 +1,29 @@
+{
+  "name": "waifu-catch",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "production-start": "node .",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "waifu",
+    "husband",
+    "redeem",
+    "marry",
+    "game",
+    "catch"
+  ],
+  "author": "Carlos Eliezer, Hugo Ruan & Roberty Brum",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
